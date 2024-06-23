@@ -1,0 +1,65 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.invalid-feedback {
+    color: red;
+    display: none;
+}
+
+.was-validated .form-control:invalid + .invalid-feedback {
+    display: block;
+}
